@@ -1,0 +1,203 @@
+{
+  "id": "activities",
+  "baseUrl": "https://www.strava.com/api/v3/athlete/activities",
+	"responseFields": [
+		{
+          "dataType": "int",
+          "path":"athlete.id"
+      },
+      {
+          "dataType": "int",
+          "path":"id"
+      },
+      {
+          "dataType": "string",
+          "path":"name"
+      },
+      {
+          "dataType": "float",
+          "path":"distance"
+      },
+      {
+          "dataType": "int",
+          "path":"moving_time"
+      },
+      {
+          "dataType": "int",
+          "path":"elapsed_time"
+      },
+      {
+          "dataType": "float",
+          "path":"total_elevation_gain"
+      },
+      {
+          "dataType": "string",
+          "path":"type"
+      },
+      {
+          "dataType": "string",
+          "path":"external_id"
+      },
+      {
+          "dataType": "datetime",
+          "path":"start_date"
+      },
+      {
+          "dataType": "datetime",
+          "path":"start_date_local"
+      },
+      {
+          "dataType": "string",
+          "path":"timezone"
+      },
+      {
+          "dataType": "int",
+          "path":"utc_offset"
+      },
+      {
+          "dataType": "float",
+          "path":"start_latlng.0"
+      },
+      {
+          "dataType": "float",
+          "path":"start_latlng.1"
+      },
+      {
+          "dataType": "float",
+          "path":"end_latlng.0"
+      },
+      {
+          "dataType": "float",
+          "path":"end_latlng.1"
+      },
+      {
+          "dataType": "string",
+          "path":"location_city"
+      },
+      {
+          "dataType": "string",
+          "path":"location_state"
+      },
+      {
+          "dataType": "string",
+          "path":"location_country"
+      },
+      {
+          "dataType": "int",
+          "path":"achievement_count"
+      },
+      {
+          "dataType": "int",
+          "path":"kudos_count"
+      },
+      {
+          "dataType": "int",
+          "path":"comment_count"
+      },
+      {
+          "dataType": "int",
+          "path":"athlete_count"
+      },
+      {
+          "dataType": "int",
+          "path":"photo_count"
+      },
+      {
+          "dataType": "string",
+          "path":"map.id"
+      },
+      {
+          "dataType": "string",
+          "path":"map.summary_polyline"
+      },
+      {
+          "dataType": "bool",
+          "path":"trainer"
+      },
+      {
+          "dataType": "bool",
+          "path":"commute"
+      },
+      {
+          "dataType": "bool",
+          "path":"manual"
+      },
+      {
+          "dataType": "bool",
+          "path":"private"
+      },
+      {
+          "dataType": "bool",
+          "path":"flagged"
+      },
+      {
+          "dataType": "string",
+          "path":"gear_id"
+      },
+      {
+          "dataType": "bool",
+          "path":"from_accepted_tag"
+      },
+      {
+          "dataType": "float",
+          "path":"average_speed"
+      },
+      {
+          "dataType": "float",
+          "path":"max_speed"
+      },
+      {
+          "dataType": "float",
+          "path":"average_cadence"
+      },
+      {
+          "dataType": "float",
+          "path":"average_watts"
+      },
+      {
+          "dataType": "float",
+          "path":"weighted_average_watts"
+      },
+      {
+          "dataType": "float",
+          "path":"kilojoules"
+      },
+      {
+          "dataType": "float",
+          "path":"device_watts"
+      },
+      {
+          "dataType": "bool",
+          "path":"has_heartrate"
+      },
+      {
+          "dataType": "float",
+          "path":"average_heartrate"
+      },
+      {
+          "dataType": "float",
+          "path":"max_heartrate"
+      },
+      {
+          "dataType": "float",
+          "path":"max_watts"
+      },
+      {
+          "id": "PrCount",
+          "dataType": "int",
+          "path":"pr_count"
+      },
+      {
+          "dataType": "int",
+          "path":"total_photo_count"
+      },
+      {
+          "dataType": "bool",
+          "path":"has_kudos"
+      },
+      {
+          "dataType": "float",
+          "path":"suffer_score"
+      }
+	]
+}

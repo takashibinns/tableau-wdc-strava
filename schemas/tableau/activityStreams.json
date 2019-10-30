@@ -1,0 +1,180 @@
+{
+  "id": "activityStreams",
+  "alias": "My Activity Streams",
+  "columns": [
+      {
+          "alias": "AthleteId",
+          "dataType": "int",
+          "columnRole":"dimension",
+          "columnType":"discrete",
+          "description":"Join to AtheleteId in My Profile",
+          "id":"activity_athlete_id"
+      },
+      {
+          "alias": "ActivityId",
+          "dataType": "int",
+          "columnRole":"dimension",
+          "columnType":"discrete",
+          "description":"Unique identifier for this activity",
+          "id":"activity_id"
+      },
+      {
+          "alias": "Activity Name",
+          "dataType": "string",
+          "id":"activity_name"
+      },
+      {
+          "alias": "GearId",
+          "dataType": "string",
+          "columnType":"discrete",
+          "description":"ID of the gear used during this activity, join to GearId in My Gear",
+          "id":"activity_gear_id"
+      },
+      {
+          "alias": "Activity Total Elapsed Time",
+          "dataType": "int",
+          "columnRole":"measure",
+          "description":"This activity's total time (end time minus start time), in seconds",
+          "id":"activity_elapsed_time"
+      },
+      {
+          "alias": "Activity Total Moving Time",
+          "dataType": "int",
+          "columnRole":"measure",
+          "description":"This activity's time spent moving, in seconds",
+          "id":"activity_moving_time"
+      },
+      {
+          "alias": "Activity IsPrivate",
+          "dataType": "bool",
+          "description":"Was this activity marked as private?",
+          "id":"activity_private"
+      },
+      {
+          "alias": "Acitity IsCommute",
+          "dataType": "bool",
+          "description":"Is this activity marked as a commute?",
+          "id":"activity_commute"
+      },
+      {
+          "alias": "Activity Type",
+          "dataType": "string",
+          "description":"This activity's type (Walk, Run, Ride, etc)",
+          "id":"activity_type"
+      },
+      {
+          "alias": "Activity IsTrainer",
+          "dataType": "bool",
+          "description":"Was this activity recorded on a training machine?",
+          "id":"activity_trainer"
+      },
+      {
+          "alias": "Activity Start DateTime",
+          "dataType": "datetime",
+          "description":"This activity's start date and time (UTC)",
+          "id":"activity_start_date"
+      },
+      {
+          "alias": "Activity Start DateTime (local)",
+          "dataType": "datetime",
+          "description":"This activity's start data and time, in the local timezone",
+          "id":"activity_start_date_local"
+      },
+      {
+          "alias": "Activity UTC Offset",
+          "dataType": "int",
+          "columnRole":"dimension",
+          "description":"The number of seconds the local timezone is offset from UTC time (-3600 would be -1 hour from UTC)",
+          "id":"activity_utc_offset"
+      },
+      {
+          "alias": "Activity Timezone",
+          "dataType": "string",
+          "id":"activity_timezone"
+      },
+      {
+          "alias": "Activity PR Count",
+          "dataType": "int",
+          "columnRole":"measure",
+          "description":"number of personal records set during this activity",
+          "id":"activity_pr_count"
+      },
+      {
+          "alias": "Activity Kudos Count",
+          "dataType": "int",
+          "columnRole":"measure",
+          "id":"activity_kudos_count"
+      },
+      {
+          "alias": "Activity Comment Count",
+          "dataType": "int",
+          "columnRole":"measure",
+          "id":"activity_comment_count"
+      },
+      {
+          "alias": "Activity Achievement Count",
+          "dataType": "int",
+          "columnRole":"measure",
+          "id":"activity_achievement_count"
+      },
+      {
+          "alias": "Stream Latitude",
+          "dataType": "float",
+          "columnRole":"dimension",
+          "columnType":"discrete",
+          "description":"Latitude of each stream point for the activity",
+          "id":"activitystream_lat"
+      },
+      {
+          "alias": "Stream Longitude",
+          "dataType": "float",
+          "columnRole":"dimension",
+          "columnType":"discrete",
+          "description":"Longitude of each stream point for the activity",
+          "id":"activitystream_lng"
+      },
+      {
+          "alias": "Stream Distance",
+          "dataType": "float",
+          "columnRole":"measure",
+          "description":"Cumulative distance at each stream point for the activity",
+          "id":"activitystream_distance"
+      },
+      {
+          "alias": "Stream Altitude",
+          "dataType": "float",
+          "columnRole":"measure",
+          "description":"Altitude at each stream point for the activity",
+          "id":"activitystream_altitude"
+      },
+      {
+          "alias": "Stream Time (sec)",
+          "dataType": "int",
+          "columnRole":"measure",
+          "description":"Cumulative time (seconds) at each stream point for the activity",
+          "id":"activitystream_time"
+      },
+      {
+          "alias": "Stream Velocity",
+          "dataType": "float",
+          "columnRole":"measure",
+          "description":"The velocity (meters/second) at each stream point for the activity",
+          "id":"activitystream_velocity_smooth"
+      },
+      {
+          "alias": "Stream Heart Rate",
+          "dataType": "int",
+          "columnRole":"measure",
+          "description":"Heart rate at each stream point for the activity",
+          "id":"activitystream_heartrate"
+      },
+      {
+          "alias": "Stream Grade (%)",
+          "dataType": "float",
+          "columnRole":"measure",
+          "numberFormat":"percentage",
+          "description":"The grade (%) at each stream point for the activity",
+          "id":"activitystream_grade_smooth"
+      }
+  ]
+}

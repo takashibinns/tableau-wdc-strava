@@ -1,0 +1,34 @@
+{
+  "id": "gear",
+  "alias": "My Gear",
+  "columns": [
+      {
+          "alias": "GearId",
+          "dataType": "string",
+          "id":"gear_id"
+      },
+      {
+          "alias": "IsPrimary",
+          "dataType": "bool",
+          "description":"Is this your default gear selection?",
+          "id":"gear_primary"
+      },
+      {
+          "alias": "Gear Name",
+          "dataType": "string",
+          "id":"gear_name"
+      },
+      {
+          "alias": "Total Distance",
+          "dataType": "float",
+          "description":"Total distance covered using this gear (meters)",
+          "id":"gear_distance"
+      },
+      {
+          "alias": "Gear Type",
+          "dataType": "string",
+          "description": "Distinguish between shoes and bikes",
+          "id":"gear_type"
+      }
+  ]
+}

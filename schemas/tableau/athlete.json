@@ -1,0 +1,82 @@
+{
+  "id": "athlete",
+  "alias": "My Profile",
+  "columns": [
+      {
+          "alias": "AthleteId",
+          "dataType": "int",
+          "columnRole":"dimension",
+          "columnType":"discrete",
+          "id":"athlete_id"
+      },
+      {
+          "alias": "Username",
+          "dataType": "string",
+          "id":"athlete_username"
+      },
+      {
+          "alias": "First Name",
+          "dataType": "string",
+          "id":"athlete_firstname"
+      },
+      {
+          "alias": "Last Name",
+          "dataType": "string",
+          "id":"athlete_lastname"
+      },
+      {
+          "alias": "Home City",
+          "dataType": "string",
+          "id":"athlete_city"
+      },
+      {
+          "alias": "Home State",
+          "dataType": "string",
+          "id":"athlete_state"
+      },
+      {
+          "alias": "Home Country",
+          "dataType": "string",
+          "id":"athlete_county"
+      },
+      {
+          "alias": "Sex",
+          "dataType": "string",
+          "id":"athlete_sex"
+      },
+      {
+          "alias": "Weight",
+          "dataType": "float",
+          "description":"The athelete's weight in kg",
+          "id":"athlete_weight"
+      },
+      {
+          "alias": "IsPremium",
+          "dataType": "bool",
+          "description": "Are you a premium strava member?",
+          "id":"athlete_premium"
+      },
+      {
+          "alias": "Profile",
+          "dataType": "string",
+          "description":"URL to the athelete's profile picture",
+          "id":"athlete_profile"
+      },
+      {
+          "alias": "IsSummit",
+          "dataType": "bool",
+          "description": "Do you a have a strava summit subscription?",
+          "id":"athlete_summit"
+      },
+      {
+          "alias": "Follower Count",
+          "dataType": "int",
+          "id":"athlete_follower_count"
+      },
+      {
+          "alias": "Friend Count",
+          "dataType": "int",
+          "id":"athlete_friend_count"
+      }
+  ]
+}

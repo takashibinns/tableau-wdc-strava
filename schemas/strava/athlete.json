@@ -1,0 +1,78 @@
+{
+  "id": "athlete",
+  "baseUrl": "https://www.strava.com/api/v3/athlete",
+	"responseFields": [
+		{
+          "dataType": "int",
+          "path":"id"
+      },
+      {
+          "dataType": "string",
+          "path":"username"
+      },
+      {
+          "dataType": "string",
+          "path":"firstname"
+      },
+      {
+          "dataType": "string",
+          "path":"lastname"
+      },
+      {
+          "dataType": "string",
+          "path":"city"
+      },
+      {
+          "dataType": "string",
+          "path":"state"
+      },
+      {
+          "dataType": "string",
+          "path":"country"
+      },
+      {
+          "dataType": "string",
+          "path":"sex"
+      },
+      {
+          "dataType": "bool",
+          "path":"premium"
+      },
+      {
+          "dataType": "datetime",
+          "path":"created_at"
+      },
+      {
+          "dataType": "datetime",
+          "path":"updated_at"
+      },
+      {
+          "dataType": "int",
+          "path":"badge_type_id"
+      },
+      {
+          "dataType": "string",
+          "path":"profile_medium"
+      },
+      {
+          "dataType": "string",
+          "path":"profile"
+      },
+      {
+          "dataType": "bool",
+          "path":"summit"
+      },
+      {
+          "dataType": "int",
+          "path":"follower_count"
+      },
+      {
+          "dataType": "int",
+          "path":"friend_count"
+      },
+      {
+          "dataType": "float",
+          "path":"weight"
+      }
+	]
+}

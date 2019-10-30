@@ -1,0 +1,299 @@
+{
+  "id": "activities",
+  "alias": "My Activities",
+  "columns": [
+      {
+          "alias": "AthleteId",
+          "dataType": "int",
+          "columnRole":"dimension",
+          "columnType":"discrete",
+          "description":"Join to AtheleteId in My Profile",
+          "id":"activities_athlete_id"
+      },
+      {
+          "alias": "ActivityId",
+          "dataType": "int",
+          "columnRole":"dimension",
+          "columnType":"discrete",
+          "description":"Unique identifier for this activity",
+          "id":"activities_id"
+      },
+      {
+          "alias": "Activity Name",
+          "dataType": "string",
+          "id":"activities_name"
+      },
+      {
+          "alias": "Distance",
+          "dataType": "float",
+          "description":"Activity distance in meters",
+          "id":"activities_distance"
+      },
+      {
+          "alias": "Moving Time",
+          "dataType": "int",
+          "description":"This activity's time spent moving, in seconds",
+          "id":"activities_moving_time"
+      },
+      {
+          "alias": "Elapsed Time",
+          "dataType": "int",
+          "description":"This activity's total time (end time minus start time), in seconds",
+          "id":"activities_elapsed_time"
+      },
+      {
+          "alias": "Total Elevation Gain",
+          "dataType": "float",
+          "description":"The total elavation gained, in meters, during this activity",
+          "id":"activities_total_elevation_gain"
+      },
+      {
+          "alias": "Type",
+          "dataType": "string",
+          "description":"This activity's type (Walk, Run, Ride, etc)",
+          "id":"activities_type"
+      },
+      {
+          "alias": "ExternalId",
+          "dataType": "int",
+          "columnRole":"dimension",
+          "columnType":"discrete",
+          "description":"The upload device's id",
+          "id":"activities_external_id"
+      },
+      {
+          "alias": "Start DateTime",
+          "dataType": "datetime",
+          "description":"This activity's start date and time (UTC)",
+          "id":"activities_start_date"
+      },
+      {
+          "alias": "Start DateTime (local)",
+          "dataType": "datetime",
+          "description":"This activity's start data and time, in the local timezone",
+          "id":"activities_start_date_local"
+      },
+      {
+          "alias": "Timezone",
+          "dataType": "string",
+          "id":"activities_timezone"
+      },
+      {
+          "alias": "UTC Offset",
+          "dataType": "int",
+          "columnRole":"dimension",
+          "columnType":"discrete",
+          "description":"The number of seconds the local timezone is offset from UTC time (-3600 would be -1 hour from UTC)",
+          "id":"activities_utc_offset"
+      },
+      {
+          "alias": "Start Latitude",
+          "dataType": "float",
+          "columnRole":"dimension",
+          "columnType":"discrete",
+          "id":"activities_start_latlng_0"
+      },
+      {
+          "alias": "Start Longitude",
+          "dataType": "float",
+          "columnRole":"dimension",
+          "columnType":"discrete",
+          "id":"activities_start_latlng_1"
+      },
+      {
+          "alias": "End Latitude",
+          "dataType": "float",
+          "columnRole":"dimension",
+          "columnType":"discrete",
+          "id":"activities_end_latlng_0"
+      },
+      {
+          "alias": "End Longitude",
+          "dataType": "float",
+          "columnRole":"dimension",
+          "columnType":"discrete",
+          "id":"activities_end_latlng_1"
+      },
+      {
+          "alias": "City",
+          "dataType": "string",
+          "id":"activities_location_city"
+      },
+      {
+          "alias": "State",
+          "dataType": "string",
+          "id":"activities_location_state"
+      },
+      {
+          "alias": "Country",
+          "dataType": "string",
+          "id":"activities_location_country"
+      },
+      {
+          "alias": "Achievement Count",
+          "dataType": "int",
+          "id":"activities_achievement_count"
+      },
+      { 
+          "alias": "Kudos Count",
+          "dataType": "int",
+          "id":"activities_kudos_count"
+      },
+      {
+          "alias": "Comment Count",
+          "dataType": "int",
+          "id":"activities_comment_count"
+      },
+      {
+          "alias": "Athlete Count",
+          "dataType": "int",
+          "description":"The number of athletes who participated in this activity",
+          "id":"activities_athelete_count"
+      },
+      {
+          "alias": "Photo Count",
+          "dataType": "int",
+          "description":"The number of photos uploaded to this activity",
+          "id":"activities_photo_count"
+      },
+      {
+          "alias": "PR Count",
+          "dataType": "int",
+          "description":"number of personal records set during this activity",
+          "id":"activities_pr_count"
+      },
+      {
+          "alias": "Total Photo Count",
+          "dataType": "int",
+          "id":"activities_total_photo_count"
+      },
+      {
+          "alias": "Has Kudos",
+          "dataType": "bool",
+          "id":"activities_has_kudos"
+      },
+      {
+          "alias": "MapId",
+          "dataType": "string",
+          "description":"Unique identifier for this activity's map",
+          "id":"activities_map_id"
+      },
+      {
+          "alias": "MapSummaryPolyline",
+          "dataType": "string",
+          "description":"This field contains an encoded summary of your activity's route.  You can use the Google Encoded Polyline Algorithm to decode this into a series of lat/lng points",
+          "id":"activities_map_summary_polyline"
+      },
+      {
+          "alias": "Trainer",
+          "dataType": "bool",
+          "description":"Was this activity recorded on a training machine?",
+          "id":"activities_trainer"
+      },
+      {
+          "alias": "Commute",
+          "dataType": "bool",
+          "description":"Is this activity marked as a commute?",
+          "id":"activities_commute"
+      },
+      {
+          "alias": "Manual",
+          "dataType": "bool",
+          "description":"Was this activity manually uploaded?",
+          "id":"activities_manual"
+      },
+      {
+          "alias": "Private",
+          "dataType": "bool",
+          "description":"Was this activity marked as private?",
+          "id":"activities_private"
+      },
+      {
+          "alias": "Flagged",
+          "dataType": "bool",
+          "id":"activities_flagged"
+      },
+      {
+          "alias": "GearId",
+          "dataType": "string",
+          "description":"ID of the gear used during this activity, join to GearId in My Gear",
+          "id":"activities_gear_id"
+      },
+      {
+          "alias": "FromAcceptedTag",
+          "dataType": "bool",
+          "id":"activities_from_accepted_tag"
+      },
+      {
+          "alias": "Average Speed",
+          "dataType": "float",
+          "description":"This activity's average speed, measured in meters/second",
+          "id":"activities_average_speed"
+      },
+      {
+          "alias": "Max Speed",
+          "dataType": "float",
+          "description":"This activity's max speed, measured in meters/second",
+          "id":"activities_max_speed"
+      },
+      {
+          "alias": "Average Cadence",
+          "dataType": "float",
+          "description":"This activity's cadence (bike rides only), measured in rotations per minute",
+          "id":"activities_average_cadence"
+      },
+      {
+          "alias": "Average Watts",
+          "dataType": "float",
+          "description":"This activity's average wattage (bike rides only)",
+          "id":"activities_average_watts"
+      },
+      {
+          "alias": "Max Watts",
+          "dataType": "float",
+          "description":"This activity's maximum wattage (bike rides only)",
+          "id":"activities_max_watts"
+      },
+      {
+          "alias": "Weighted Average Watts",
+          "dataType": "float",
+          "description":"Similar to normalized power (bike rides only)",
+          "id":"activities_weighted_average_watts"
+      },
+      {
+          "alias": "Kilojoules",
+          "dataType": "float",
+          "description":"Total work done during the activity (bike rides only)",
+          "id":"activities_kilojoules"
+      },
+      {
+          "alias": "DeviceWatts",
+          "dataType": "bool",
+          "description":"Are watts measured by a power meter? (bike rides only)",
+          "id":"activities_device_watts"
+      },
+      {
+          "alias": "Has Heartrate",
+          "dataType": "bool",
+          "id":"activities_has_heartrate"
+      },
+      {
+          "alias": "Average Heart Rate",
+          "dataType": "float",
+          "description":"The average heart rate during this activity, measured in beats/minute",
+          "id":"activities_average_heartrate"
+      },
+      {
+          "alias": "Max Heart Rate",
+          "dataType": "float",
+          "description":"The maximum heart rate during this activity, measured in beats/minute",
+          "id":"activities_max_heartrate"
+      },
+      {
+          "alias": "Suffer Score",
+          "dataType": "float",
+          "description":"A score based on your heart rate, to determine how hard this activity was (summit only",
+          "id":"activities_suffer_score"
+      }
+  ]
+}

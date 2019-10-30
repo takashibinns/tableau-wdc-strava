@@ -1,0 +1,23 @@
+{
+  "id": "gear",
+  "baseUrl": "https://www.strava.com/api/v3/athlete",
+  "responseArrays":["bikes", "shoes"],
+	"responseFields": [
+		{
+          "dataType": "int",
+          "path":"id"
+      },
+      {
+          "dataType": "bool",
+          "path":"primary"
+      },
+      {
+          "dataType": "string",
+          "path":"name"
+      },
+      {
+          "dataType": "float",
+          "path":"distance"
+      }
+	]
+}

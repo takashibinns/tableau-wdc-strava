@@ -1,0 +1,26 @@
+{
+  "id": "activityStreams",
+  "baseUrl": "https://www.strava.com/api/v3/activities/",
+	"responseFields": [
+		{
+          "dataType": "string",
+          "path":"type"
+      },
+      {
+          "dataType": "array",
+          "path":"data"
+      },
+      {
+          "dataType": "string",
+          "path":"series_type"
+      },
+      {
+          "dataType": "int",
+          "path":"original_size"
+      },
+      {
+          "dataType": "string",
+          "path":"resolution"
+      }
+	]
+}
