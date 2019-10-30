@@ -51,7 +51,7 @@
           "id":"activity_private"
       },
       {
-          "alias": "Acitity IsCommute",
+          "alias": "Activity IsCommute",
           "dataType": "bool",
           "description":"Is this activity marked as a commute?",
           "id":"activity_commute"
