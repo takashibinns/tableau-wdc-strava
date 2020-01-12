@@ -463,14 +463,14 @@
         var payload = {
             "client_id": auth.clientId,
             "client_secret": auth.clientSecret,
-            "code": auth.code
+            "grant_type": grantType
         }
 
         //  Decide what type of code/token to pass in
         if (grantType=="refresh_token"){
             payload["refresh_token"] = auth.refreshToken;
         } else if (grantType=="authorization_code"){
-            payload["authorization_code"] = auth.code;
+            payload["code"] = auth.code;
         }
 
         //  Make the API call
